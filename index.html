@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superman Registration Form</title>
+    <style>
+        /* Basic CSS for styling the form */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #001f3d; /* Dark blue background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: white;
+        }
+
+        .form-container {
+            background-color: #ffcc00; /* Yellow background */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            text-align: center;
+        }
+
+        .form-container h2 {
+            font-family: 'Impact', sans-serif;
+            color: #d50000; /* Red color for the title */
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .form-container input[type="text"],
+        .form-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid #d50000; /* Red border */
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+            background-color: #e1e1e1;
+        }
+
+        .form-container input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #d50000; /* Red background */
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .form-container input[type="submit"]:hover {
+            background-color: #b30000; /* Darker red on hover */
+        }
+
+        .form-container .message {
+            font-size: 14px;
+            color: #333;
+            margin-top: 15px;
+        }
+
+        .form-container .message a {
+            color: #d50000;
+            text-decoration: none;
+        }
+
+        .form-container .message a:hover {
+            text-decoration: underline;
+        }
+
+        /* Superman Logo */
+        .superman-logo {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Superman_logo.svg/1024px-Superman_logo.svg.png" alt="Superman Logo" class="superman-logo">
+        <h2>Superman Registration</h2>
+        <form action="#" method="POST">
+            <label for="registrationNumber">Registration Number:</label>
+            <input type="text" id="registrationNumber" name="registrationNumber" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <input type="submit" value="Register">
+        </form>
+        <div class="message">
+            <p>Already have an account? <a href="#">Login</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
